@@ -1,0 +1,1 @@
+This is a simple example of a browser-based Godot game. Nothing too fancy.
