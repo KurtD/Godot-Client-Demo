@@ -7,7 +7,7 @@
 extents = Vector2( 16, 160 )
 
 [sub_resource type="OccluderPolygon2D" id=2]
-polygon = PoolVector2Array( -16, -360, -16, -39, 16, -39, 16, -359, -16, -360 )
+polygon = PoolVector2Array( -16, -360, -16, -40, 16, -40, 16, -360, -16, -360 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 10, 40 )
