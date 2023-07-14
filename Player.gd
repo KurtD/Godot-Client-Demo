@@ -46,5 +46,9 @@ func _on_Detect_area_entered(area):
 		score = score + 1
 
 func _on_Detect_body_entered(body):
-	if body.name == "Walls":
+	if body.name == "Walls"  or body.name == "Boundaries":
 		get_tree().reload_current_scene()
+
+func _input(event):
+    if event is InputEventMouseButton:
+        motion.y = -FLAP
