@@ -10,23 +10,23 @@ extents = Vector2( 16, 160 )
 [node name="Boundaries" type="StaticBody2D" parent="."]
 
 [node name="UpperBoundarySprite" type="Sprite" parent="Boundaries"]
-position = Vector2( 6.10352e-05, -271.999 )
+position = Vector2( 6.10352e-05, -335.999 )
 rotation = 1.5708
 scale = Vector2( 2, 20 )
 texture = ExtResource( 1 )
 
 [node name="UpperBoundaryColl" type="CollisionShape2D" parent="Boundaries"]
-position = Vector2( 6.10352e-05, -271.999 )
+position = Vector2( 6.10352e-05, -335.999 )
 rotation = 1.5708
 shape = SubResource( 1 )
 
 [node name="LowerBoundarySprite" type="Sprite" parent="Boundaries"]
-position = Vector2( 6.10352e-05, 272.001 )
+position = Vector2( 6.10352e-05, 336.001 )
 rotation = 1.5708
 scale = Vector2( 2, 20 )
 texture = ExtResource( 1 )
 
 [node name="LowerBoundaryColl" type="CollisionShape2D" parent="Boundaries"]
-position = Vector2( 6.10352e-05, 272.001 )
+position = Vector2( 6.10352e-05, 336.001 )
 rotation = 1.5708
 shape = SubResource( 1 )

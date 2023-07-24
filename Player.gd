@@ -8,6 +8,8 @@ const GRAVITY = 10
 var motion = Vector2()
 var Wall = preload("res://Wallnode.tscn")
 var score = 0
+var inactiveDeathCount = 0
+signal death(score)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -39,7 +41,7 @@ func Wall_reset():
 func _on_Resetter_body_entered(body):
 		if body.name == "Walls":
 			body.queue_free()
-			Wall_reset()
+			Wall_reset()		
 
 func _on_Detect_area_entered(area):
 	if area.name == "PointArea":
@@ -47,7 +49,7 @@ func _on_Detect_area_entered(area):
 
 func _on_Detect_body_entered(body):
 	if body.name == "Walls"  or body.name == "Boundaries":
-		get_tree().reload_current_scene()
+		emit_signal("death", score)
 
 func _input(event):
     if event is InputEventMouseButton:

@@ -11,8 +11,26 @@ config_version=4
 [application]
 
 config/name="Godot Client Demo"
-run/main_scene="res://World.tscn"
+run/main_scene="res://MainMenu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://global.gd"
+
+[display]
+
+window/size/width=720
+window/size/resizable=false
+window/size/test_height=1080
+window/handheld/orientation="portrait"
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[global]
+
+window=false
+stretch=false
 
 [gui]
 
